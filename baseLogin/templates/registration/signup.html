@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-section">
+            <h2>É bom ter você conosco novamente</h2>
+            <p>acesse sua conta agora mesmo.</p>
+            <a href="{% url 'login' %}" class="login-button">Entrar</a>
+        </div>
+        <div class="right-section">
+            <h2>Crie sua conta</h2>
+            <div class="form-container">
+                <form method="post">
+                    {% csrf_token %}
+            
+                    {{ form.non_field_errors }}
+            
+                    <p>
+                        {{ form.username.label_tag }}
+                        {{ form.username }}
+                        {{ form.username.errors }}
+                    </p>
+                    <p>
+                        {{ form.password1.label_tag }}
+                        {{ form.password1 }}
+                        {{ form.password1.errors }}
+                    </p>
+                    <p>
+                        {{ form.password2.label_tag }}
+                        {{ form.password2 }}
+                        {{ form.password2.errors }}
+                    </p>
+            
+                    <button type="submit" class="submit-button">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

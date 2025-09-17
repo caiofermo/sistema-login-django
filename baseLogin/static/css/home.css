@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc; /* cor de fundo clara */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Caixa central, parecida com a do login */
+.home-box {
+    background-color: #e9f1fa;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 380px;
+    text-align: center;
+}
+
+.home-box h2 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Botão de sair estilizado */
+.btn-logout {
+    background-color: #B2D6FF;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #92BBEF;
+}

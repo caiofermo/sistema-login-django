@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-section">
+            <h2>Bem vindo</h2>
+            <p>Aproveite sua expêriencia.</p>
+        </div>
+        <div class="right-section">
+            <h2>Login</h2>
+            <div class="form-container">
+                <form method="post">
+                    {% csrf_token %}
+            
+                    {{ form.non_field_errors }}
+            
+                    <p>
+                        {{ form.username.label_tag }}
+                        {{ form.username }}
+                        {{ form.username.errors }}
+                    </p>
+            
+                    <p>
+                        {{ form.password.label_tag }}
+                        {{ form.password }}
+                        {{ form.password.errors }}
+                    </p>
+            
+                    <button type="submit" class="submit-button">Login</button>
+                </form>
+            </div>
+            <p>Não tem conta? <a href="{% url 'authView' %}" class="signup-link">Cadastre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>

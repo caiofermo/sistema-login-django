@@ -1,0 +1,40 @@
+# Django 
+*.pot
+*.mo
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Ambiente virtual
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python 
+__pycache__/
+*.py[cod]
+*.pyo 
+*.pyd
+*.so
+
+# logs
+*.log
+
+# Arquivos de sistema 
+.DS_Store
+Thumbs.db
+
+# Testes e cobertura
+.coverage
+.tox/
+.junit.xml
+htmlcov/
+
+# Cache do django
+*.pid
