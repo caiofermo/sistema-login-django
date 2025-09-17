@@ -68,4 +68,4 @@ Ele utiliza a biblioteca padrão \`django.contrib.auth\` para autenticação de 
 
 ## 👨‍💻 Autor
 
-- **Caio Fernandes** – [caiofermo](https://github.com/seu-usuario)
+- **Caio Fernandes** – [caiofermo]([https://github.com/seu-usuario](https://github.com/caiofermo))
