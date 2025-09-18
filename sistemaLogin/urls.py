@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('chefao-moggado/', admin.site.urls),
     path('', include('baseLogin.urls')),  # Incluindo as URLs da app baseLogin
 ]
