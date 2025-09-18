@@ -45,12 +45,28 @@ Ele utiliza a biblioteca padrão \`django.contrib.auth\` para autenticação de 
    python manage.py createsuperuser
    "
 
-6. **Rodar o servidor**
+6. **Gerar uma SECRET_KEY **
+   abra o terminal e execute o comando
+   "bash
+   python manage.py shell
+   "
+   para iniciar a shell do Django. Em seguida, importe a função
+   "bash
+   get_random_secret_key
+   "
+   e chame-a, como em
+   "bash
+   from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())
+   "
+   Copie a chave gerada e substitua-a na sua variável SECRET_KEY em settings.py, ou preferencialmente, configure-a como uma variável de ambiente para maior segurança. 
+
+7. **Rodar o servidor**
    "bash
    python manage.py runserver
    "
 
-7. **Acessar no navegador**
+
+8. **Acessar no navegador**
    "
    http://127.0.0.1:8000/
    "
